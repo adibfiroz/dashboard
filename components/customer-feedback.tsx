@@ -1,6 +1,5 @@
 "use client"
 
-import { Rating } from '@material-tailwind/react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -12,7 +11,7 @@ const CustomerFeedback = () => {
                 Jenny wilson
             </div>
             <div className='mt-2'>
-                <Rating value={4} />
+                <img src="/rating.png" className='h-8 object-cover -ml-4' width={150} height={30} alt="" />
             </div>
             <p className=' text-gray-500 text-sm mt-2'>See below our beautiful Rating example that you can use in your Tailwind CSS and React project. The example also comes in different styles and colors so you can adapt it easily to your needs.</p>
         </div>
