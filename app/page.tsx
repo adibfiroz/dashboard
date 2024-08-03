@@ -232,7 +232,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#202028] flex flex-col gap-4 rounded-md p-4 mt-7">
-              <h3 className=" text-lg text-white font-bold">Customer's Feedback</h3>
+              <h3 className=" text-lg text-white font-bold">Customer{`'`}s Feedback</h3>
               <CustomerFeedback />
               <CustomerFeedback />
               <CustomerFeedback />

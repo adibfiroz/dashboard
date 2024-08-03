@@ -44,12 +44,12 @@ const Sidebar = () => {
     return (
         <div className='bg-[#202028] flex flex-col h-full text-white'>
             <div className='text-center mt-3 mb-7'>
-                <Link href="/" className=' '>
+                <Link href="/" >
                     <img src="/menu.png" width={25} height={25} className=' mx-auto' alt="logo" />
                 </Link>
             </div>
 
-            <div className=' space-y-6'>
+            <div className='space-y-6'>
                 {routes.map((route) => (
                     <Link
                         key={route.href}
@@ -57,7 +57,7 @@ const Sidebar = () => {
                         className={cn('px-5 py-1 flex justify-center',
                             pathname === route.href ? " border-l-2 border-l-[#7294ff]" : "",
                         )}>
-                        <route.icon className={cn(' ', pathname === route.href ? "fill-[#7294ff] text-[#7294ff]" : route.color)} />
+                        <route.icon className={cn(pathname === route.href ? "fill-[#7294ff] text-[#7294ff]" : route.color)} />
                     </Link>
                 ))}
             </div>
